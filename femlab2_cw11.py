@@ -9,7 +9,10 @@ def fun_cw11():
             if i == j:
                 s = s+tab[i,j];
             if j == size-1: 
-                s = s+tab[i,j-1-i+1];
+                s = s+tab[i,j-i];
+    if size%2.0 != 0:
+        s = s - tab[round(size/2),round(size/2)];
+        
     print("Rozmiar: ",size)
     print("Suma: ",s)
     print("....................")
